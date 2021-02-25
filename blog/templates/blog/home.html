@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <h1>
+            Hi, You can grow up
+        </h1>
+    </head>
+    {% for article in articles %}
+            <article>
+                <img src=" {{article.thumbnail.url}} " alt=" {{article.slug}} ">
+                <h1> <a href="{{article.slug}}">{{article.title}}</a> </h1>
+                <small> {{article.publish}} </small>
+                <p> {{article.description}} </p>
+            </article>
+
+    {% endfor %}
+</body>
+</html>
