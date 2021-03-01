@@ -11,4 +11,4 @@ def article_detail(request,slug):
      context = {
          "article":Article.objects.get(slug =slug)
     }
-     return render(request, "blog/article_detail.html", context)
+     return render(request, "blog/detail.html", context)
